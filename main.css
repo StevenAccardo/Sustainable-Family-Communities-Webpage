@@ -1,0 +1,25 @@
+body {
+  background-color: #fceac6; }
+
+#buttons {
+  margin-right: 10%; }
+
+#button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8 {
+  background-color: #3366cc;
+  border: solid 2px black;
+  text-align: center;
+  color: #FFF;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
+
+/*#mainTitle{
+	width: 20%;
+	float: left;
+}
+
+#mission{
+	width:20%;
+}*/
+
+/*# sourceMappingURL=main.css.map */
