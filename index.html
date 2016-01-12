@@ -5,56 +5,46 @@
 	<title>Sustainable Family Communities</title>
 	<meta charset = "utf-8"/>
 	<meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<!--Personally created CSS style sheet-->
 	<link rel = "stylesheet" type = "text/css" href = "main.css"/>
 </head>
 
 <body>
-	<div class="container-fluid">
-
-		<div class="row">
-			<div id="mainTitle" class="col-md-4">
-				<h1>Leading the way out of global poverty&#8482 with Sustainable Family Communities&#174</h1>
+	<div id="maincontainer">
+			<div id="toprow">
+				<div id="maintitle">
+					<h1>Leading the way out of global poverty&#8482</h1><h2>with</h2><h1>Sustainable Family Communities&#174</h1>
+				</div>
+				<div id="videobox">
+					<iframe name="videoplayer" id="videoplayer" src="https://www.youtube.com/embed/JUWs8F5v5jY?autoplay=0" allowfullscreen>></iframe>
+				</div>
 			</div>
 
-			<!-- 16:9 aspect ratio -->
-			<div class="col-md-4 pull-right embed-responsive embed-responsive-16by9">
-				<iframe width="420" height="315" class="embed-responsive-item" src="//www.youtube.com/embed/L1PrwneptVQ"></iframe>
+			<div id="bottomrow">
+				<div id="mission">
+					<p>A non-profit initiative donated to countries requesting assistance in the reduction of extreme poverty of urban slums and its effects on the society and economy of a nation (e.g. orphans and crime).</p>
+				</div>
+				<section id="videobuttons" >
+					<div class="row">
+						<a class ="left button" href="http://www.youtube.com/embed/Q5im0Ssyyus?autoplay=0" id="button1" target="videoplayer">Introduction</a>
+						<a class ="right button" href="http://www.youtube.com/embed/GVBSCUb0ZMY?autoplay=0" id="button2" target="videoplayer">Sustainable Economy</a>
+					</div>
+
+					<div class="row">
+						<a class ="left button" href="http://www.youtube.com/embed/9PJcsq9e03o?autoplay=0" id="button3" target="videoplayer">Benefits to Country</a>
+						<a class ="right button" href="http://www.youtube.com/embed/uvE3Q9whfaw?autoplay=0" id="button4" target="videoplayer">Sustainable Environment</a>
+					</div>
+
+					<div class="row">
+						<a class ="left button" href="http://www.youtube.com/embed/efkc3miT_gI?autoplay=0" id="button5" target="videoplayer">Fewer Orphans</a>
+						<a class ="right button" href="http://www.youtube.com/embed/7WdG7MXWiMM?autoplay=0" id="button6" target="videoplayer">Sustainable Food-Supply</a>
+					</div>
+
+					<div class="row">
+						<a class ="left button" href="http://www.youtube.com/embed/wJaF2ll0nkc?autoplay=0" id="button7" target="videoplayer">Implementation Process</a>
+						<a class ="right button" href="http://www.youtube.com/embed/JUWs8F5v5jY?autoplay=0" id="button8" target="videoplayer">Sustainable Society</a>
+					</div>
+				</section>
 			</div>
-		</div>
-
-		<div class="row">
-			<div id="mission" class="col-md-6">
-				<p>A non-profit initiative donated to countries requesting assistance in the reduction of extreme poverty of urban slums and its effects on the society and economy of a nation (e.g. orphans and crime).</p>
-			</div>
-			<section id="buttons" class="col-md-6 pull-right">
-				<div class="row">
-					<div id="button1" class="col-xs-12 col-md-1 pull-right">Introduction</div>
-					<div id="button2" class="col-xs-12 col-md-1 pull-right">Sustainable Economy</div>
-				</div>
-
-				<div class="row">
-					<div id="button3" class="col-xs-12 col-md-1 pull-right">Benefits to Country</div>
-					<div id="button4" class="col-xs-12 col-md-1 pull-right">Sustainable Environment</div>
-				</div>
-
-				<div class="row">
-					<div id="button5" class="col-xs-12 col-md-1 pull-right">Fewer Orphans</div>
-					<div id="button6" class="col-xs-12 col-md-1 pull-right">Sustainable Food-Supply</div>
-				</div>
-
-				<div class="row">
-					<div id="button7" class="col-xs-12 col-md-1 pull-right">Implementation Process</div>
-					<div id="button8" class="col-xs-12 col-md-1 pull-right">Sustainable Society</div>
-				</div>
-			</section>
-		</div>
-
-
 	</div>
 	<!--Loading the scripts at the bottom, so the page will without waiting for the scripts to load-->
 	<!--Load JQuery from the CDN first-->
@@ -64,14 +54,9 @@
 	<!--If CDN fails to load, serve up the local version-->
 	<script>window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');</script>
 	<!--The JS file that I create, which holds my JQuery code-->
-	<script src="js/script.js"></script>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 </body>
 </html>
 
 
 
-
-<!--<input type="button" onclick="location.href='http://stevenaccardo.com'" value="Get to Know Me!"/>-->
