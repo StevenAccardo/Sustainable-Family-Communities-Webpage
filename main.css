@@ -1,6 +1,7 @@
 body {
   background-color: #FFF;
-  margin: 0; 
+  margin: 0;
+  font-family: Arial;
 }
 
 h1 {
@@ -15,8 +16,9 @@ h2 {
 #maincontainer {
   padding: 3% 3%;
   margin:auto;
-  width: 960px;
+  width: 1200px;
   background-color: #fceac6;
+  border: solid 6px black;
 }
 
 #toprow {
@@ -24,8 +26,16 @@ h2 {
 }
 #maintitle {
   width: 35%;
+  height: 338px;
   float: left;
+  display: table;
+}
+
+#maininternaldiv {
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
+  width: 100%;
 }
 
 #videobox {
@@ -33,20 +43,30 @@ h2 {
 }
 
 #videoplayer {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 338px;
   border: solid 3px black;
 }
 
 #bottomrow {
   overflow: hidden;
-  margin-top: 5%;
+  margin-top: 1%;
+  position: relative
 }
 
 #mission {
   width: 35%;
   float: left;
+  margin: auto;
+  /*position: absolute;
+  top: 50%;
+  transform: translateY(-50%);*/
+}
+
+#missioninternaldiv {
+
   text-align: center;
+  width: 100%;
 }
 
 #mission p {
@@ -55,13 +75,18 @@ h2 {
 }
 
 .row {
-  width: 100;
+  width: 100%;
 }
 
 #videobuttons {
   float: right;
-  width: 45%;
+  width: 600px;
    }
+
+ #vidinternaldiv {
+  margin: auto;
+  width: 65%;
+ }
 
 .button {
   background-color: #3366cc;
@@ -73,8 +98,13 @@ h2 {
   border-radius: 15px; 
   overflow: hidden;
   display: inline-block;
+  width: 30%;
   height: 40px;
   padding: 1%;
+  word-wrap: normal;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
   a {
@@ -82,103 +112,312 @@ h2 {
   }
 
   .left {
-     margin: 5%;
-    margin-bottom: 5%;
+   margin: 1% 5% 2% 5%;
     float: left;
   }
 
   .right {
-    margin: 5%;
-    margin-bottom: 5%;
+    margin: 1% 5% 2% 5%;
     float: right;
   }
 
-@media only screen and (max-width: 959px) and (orientation: portrait) {
+@media only screen and (max-width: 500px) and (orientation: portrait) {
 
 body {
-  background-color: #FFF;
-  margin: 0; 
+  width:100%;
 }
 
 #maincontainer {
   padding: 3% 3%;
-  margin:auto;
-  width: 100%
-  background-color: #fceac6;
+  margin:0;
+  width: 94%;
 }
 
 #toprow {
-  overflow: hidden;
-  display: block;
+  width: 100%;
 }
 #maintitle {
   width: 100%;
-  float: left;
+  height: initial;
+  float: none;
+  display:initial;
+}
+
+#maininternaldiv {
+  display: initial;
+  vertical-align: initial;
   text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
 #videobox {
-  float: right;
+  float: initial;
+  margin:auto;
+  width: 100%;
 }
 
 #videoplayer {
-  width: 100%;
-  height: 400px;
-  border: solid 3px black;
+  width: 98%;
+  height: auto;
+  margin-top: 3%;
 }
 
 #bottomrow {
-  overflow: hidden;
+  overflow: visible;
+  margin:auto;
   margin-top: 5%;
+  position: initial;
+  width: 100%;
+
 }
 
 #mission {
-  width: 35%;
-  float: left;
+  width: 100%;
+  float: none;
   text-align: center;
+  position: initial;
+  top: initial;
+  transform: initial;
 }
 
-#mission p {
-  font-size: 20px;
-}
-
-.row {
-  width: 100;
+#missioninternaldiv {
+text-align: center;
+width: 100%;
 }
 
 #videobuttons {
-  float: right;
-  width: 45%;
-   }
+  float: initial;
+  width: 100%;
+  margin: auto;
+}
+
+#vidinternaldiv {
+margin: auto;
+width: 100%;
+}
 
 .button {
-  background-color: #3366cc;
-  border: solid 2px black;
-  text-align: center;
-  color: #FFF;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px; 
-  overflow: hidden;
-  display: inline-block;
+  overflow: visible;
+  display: block;
+  width: 96%;
+  margin: auto;
   height: 40px;
   padding: 1%;
 }
 
-  a {
-    text-decoration: none;
-  }
 
-  .left {
-     margin: 5%;
-    margin-bottom: 5%;
-    float: left;
-  }
+.left {
+  margin: auto;
+  margin-bottom: 2%;
+  float: none;
+}
 
-  .right {
-    margin: 5%;
-    margin-bottom: 5%;
-    float: right;
-  }
+.right {
+  margin: auto;
+  margin-bottom: 2%;
+  float: none;
+}
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+
+body {
+  width:100%;
+}
+
+#maincontainer {
+  padding: 3% 3%;
+  margin:0;
+  width: 94%;
+}
+
+#toprow {
+  width: 100%;
+}
+#maintitle {
+  width: 100%;
+  height: initial;
+  float: none;
+  display:initial;
+}
+
+#maininternaldiv {
+  display: initial;
+  vertical-align: initial;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+#videobox {
+  float: initial;
+  margin:auto;
+  width: 100%;
+}
+
+#videoplayer {
+  width: 99%;
+  height: auto;
+  margin-top: 3%;
+}
+
+#bottomrow {
+  overflow: visible;
+  margin:auto;
+  margin-top: 5%;
+  position: initial;
+  width: 100%;
+
+}
+
+#mission {
+  width: 100%;
+  float: none;
+  text-align: center;
+  position: initial;
+  top: initial;
+  transform: initial;
+}
+
+#missioninternaldiv {
+text-align: center;
+width: 100%;
+}
+
+#videobuttons {
+  float: initial;
+  width: 100%;
+  margin: auto;
+}
+
+#vidinternaldiv {
+margin: auto;
+width: 100%;
+}
+
+.button {
+  overflow: visible;
+  display: block;
+  width: 96%;
+  margin: auto;
+  height: 40px;
+  padding: 1%;
+}
+
+
+.left {
+  margin: auto;
+  margin-bottom: 2%;
+  float: none;
+}
+
+.right {
+  margin: auto;
+  margin-bottom: 2%;
+  float: none;
+}
+
+}
+
+@media only screen and (max-width: 979px) and (min-width: 501px) and (orientation: portrait) {
+
+body {
+  width:100%;
+}
+
+#maincontainer {
+  padding: 3% 3%;
+  margin:0;
+  width: 94%;
+}
+
+#toprow {
+  width: 100%;
+}
+#maintitle {
+  width: 100%;
+  height: initial;
+  float: none;
+  display:initial;
+}
+
+#maininternaldiv {
+  display: initial;
+  vertical-align: initial;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+#videobox {
+  float: initial;
+  margin:auto;
+  width: 100%;
+}
+
+#videoplayer {
+  width: 99%;
+  height: 338px;
+  margin:auto;
+  margin-top: 3%;
+}
+
+#bottomrow {
+  overflow: visible;
+  margin:auto;
+  margin-top: 5%;
+  position: initial;
+  width: 100%;
+
+}
+
+#mission {
+  width: 100%;
+  float: none;
+  text-align: center;
+  position: initial;
+  top: initial;
+  transform: initial;
+}
+
+#missioninternaldiv {
+text-align: center;
+width: 100%;
+}
+
+#videobuttons {
+  float: initial;
+  width: 100%;
+  margin: auto;
+}
+
+#vidinternaldiv {
+margin: auto;
+width: 100%;
+}
+
+.button {
+  overflow: visible;
+  display: block;
+  width: 96%;
+  margin: auto;
+  height: 40px;
+  padding: 1%;
+}
+
+
+.left {
+  margin: auto;
+  margin-bottom: 2%;
+  float: none;
+}
+
+.right {
+  margin: auto;
+  margin-bottom: 2%;
+  float: none;
+}
 
 }
