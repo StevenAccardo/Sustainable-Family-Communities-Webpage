@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	//Video Switch function//
-	$('a').click(function(e) {
+	$('.row a').click(function(e) {
 		e.preventDefault();
 
 		$("#videoplayer").attr("src", $(this).attr("href"));
